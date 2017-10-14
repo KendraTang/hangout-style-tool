@@ -1,0 +1,17 @@
+{
+    "manifest_version": 2,
+
+    "name": "Disable google hangout image background color",
+    "description": "Disable hangout image background color but faild. Disable background color of others' all message content box instead.",
+    "version": "1.0",
+    "page_action": {
+        "default_icon": "icon.png"
+    },
+    "content_scripts": [
+        {
+            "matches": ["https://hangouts.google.com/*"],
+            "css": ["mystyles.css"],
+            "all_frames": true
+        }
+    ]
+}
